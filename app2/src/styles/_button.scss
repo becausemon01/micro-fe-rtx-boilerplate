@@ -1,0 +1,10 @@
+:global .ant-btn-primary {
+	border-color: rgba(2, 63, 136, 1);
+	background: rgba(2, 63, 136, 1);
+}
+
+:global .ant-btn-primary:hover,
+:global .ant-btn-primary:focus {
+	border-color: rgba(2, 63, 136, 0.8);
+	background: rgba(2, 63, 136, 0.8);
+}

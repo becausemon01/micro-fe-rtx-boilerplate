@@ -1,0 +1,17 @@
+:global .ant-table-thead {
+	& > tr {
+		& > th {
+			background: rgba(182, 174, 241, 1);
+			&:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+				height: 100%;
+				background-color: rgba(236, 236, 236, 1);
+			}
+		}
+	}
+}
+
+:global .ant-table-tbody {
+	.ant-table-row:not(:nth-child(2n + 1)) {
+		background-color: rgba(239, 237, 252, 1);
+	}
+}
