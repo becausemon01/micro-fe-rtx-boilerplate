@@ -176,7 +176,7 @@ module.exports = {
 				'./routes': './src/routes/routes',
 			},
 			remotes: {
-				// profile: 'profile@http://localhost:3001/remoteEntry.js',
+				// app1: 'app1@http://localhost:3001/remoteEntry.js',
 			},
 			shared: {
 				...deps,

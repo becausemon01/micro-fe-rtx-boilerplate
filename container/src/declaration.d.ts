@@ -17,7 +17,7 @@ declare module '*.module.scss' {
 
 declare module '*.png'
 
-declare module 'profile/routes' {
+declare module 'app1/routes' {
 	const routes: any[]
 
 	export default routes

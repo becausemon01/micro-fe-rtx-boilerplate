@@ -2,7 +2,7 @@ import { Suspense } from 'react'
 import { Route, Routes } from 'react-router-dom'
 
 import localRoutes from './routes'
-// import remoteRoutesProfile from 'profile/routes'
+// import remoteRoutesProfile from 'app1/routes'
 const routes = [...localRoutes]
 
 const ProtectedRoutes = () => (

@@ -1,21 +1,12 @@
-import React, { lazy } from 'react'
+import React from 'react'
 
-const Page = React.lazy(() => import('@/pages/index'))
 const Test = React.lazy(() => import('@/pages/test'))
 const Login = React.lazy(() => import('@/pages/index'))
 
 const routes: any[] = [
 	{
-		path: '*',
-		component: Page,
-	},
-	{
-		path: '/test/*',
+		path: '/app1/*',
 		component: Test,
-	},
-	{
-		path: '/test/:id',
-		component: lazy(() => import('@/pages/testId')),
 	},
 	{
 		path: '/login',

@@ -128,7 +128,7 @@ module.exports = {
 		open: false,
 		hot: true,
 		historyApiFallback: true,
-		port: 3000,
+		port: 3001,
 		headers: {
 			'Access-Control-Allow-Origin': '*',
 			'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
@@ -170,13 +170,13 @@ module.exports = {
 	// },
 	plugins: [
 		new ModuleFederationPlugin({
-			name: 'container',
+			name: 'app1',
 			filename: 'remoteEntry.js',
 			exposes: {
 				'./routes': './src/routes/routes',
 			},
 			remotes: {
-				// profile: 'profile@http://localhost:3001/remoteEntry.js',
+				// container: 'container@http://localhost:3000/remoteEntry.js',
 			},
 			shared: {
 				...deps,
